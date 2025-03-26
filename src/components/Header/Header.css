@@ -1,0 +1,19 @@
+.header-container {
+  background-color: #ffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: inherit;
+  color: var(--blue);
+  font-weight: 700;
+  min-height: 4rem;
+  box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.3);
+}
+.logo {
+  height: 3rem;
+  width: 3rem;
+}
+
+.telephone-number {
+  margin-right: 0.5rem;
+}
