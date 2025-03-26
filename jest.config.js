@@ -3,7 +3,6 @@ export default {
   transform: {
     "^.+\\.tsx?$": "ts-jest",
   },
-s
   moduleNameMapper: {
     "\\.(css|less|sass|scss)$": "identity-obj-proxy",
     "^.+\\.svg$": "jest-transformer-svg",
