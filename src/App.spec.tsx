@@ -10,7 +10,7 @@ describe("App", () => {
 
   it("should test the search input field", () => {
     render(<App />);
-    const input = screen.getByLabelText("Search");
+    const input = screen.getByLabelText("filter");
     fireEvent.change(input, { target: { value: "Dolly" } });
     expect(input.value).toBe("Dolly");
   });
