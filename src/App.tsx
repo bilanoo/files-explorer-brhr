@@ -1,4 +1,5 @@
 import "./App.css";
+import { DocumentCard } from "./components/DocumentCard/DocumentCard";
 import { Header } from "./components/Header/Header";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           </div>
         </form>
       </div>
+      <DocumentCard />
     </>
   );
 }
