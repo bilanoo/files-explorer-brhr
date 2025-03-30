@@ -16,4 +16,16 @@ describe("DocumentCard", () => {
     expect(screen.getByText("20-03-2025")).toBeInTheDocument();
     expect(screen.getByText("pdf")).toBeInTheDocument();
   });
+  it("should display the folder icon if the display card is a folder", () => {
+    render(
+      <DocumentCard
+        image="dummy"
+        title="Handbook"
+        type="folder"
+        date="20-03-2025"
+      />
+    );
+
+    expect(screen.getByTestId("folder")).toBeInTheDocument();
+  });
 });
