@@ -26,6 +26,6 @@ describe("DocumentCard", () => {
       />
     );
 
-    expect(screen.getByTestId("folder")).toBeInTheDocument();
+    expect(screen.getByTestId("dropdown-icon")).toBeInTheDocument();
   });
 });
