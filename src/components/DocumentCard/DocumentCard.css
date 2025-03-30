@@ -21,6 +21,11 @@
   }
 }
 
+.folder-dropdown-icon {
+  margin-left: auto;
+  cursor: pointer;
+}
+
 .content-container {
   display: flex;
   flex-direction: column;

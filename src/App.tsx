@@ -21,7 +21,12 @@ function App() {
           </div>
         </form>
       </div>
-      <DocumentCard />
+      <DocumentCard
+        image={"image"}
+        title={"Employee Handbook"}
+        type={"type"}
+        date={"date"}
+      />
     </>
   );
 }

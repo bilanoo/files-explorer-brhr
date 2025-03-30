@@ -1,7 +1,16 @@
 import "./DocumentCard.css";
+import ArrowDropDown from "../../../public/assets/arrow-drop-down.svg";
+import ArrowDropUp from "../../../public/assets/arrow-drop-up.svg";
 import { IDocumentCard } from "./DocumentCard.types";
 
-export const DocumentCard = ({ title, date, type, image }: IDocumentCard) => {
+export const DocumentCard = ({
+  title,
+  date,
+  type,
+  image,
+  isExpanded,
+  onClick,
+}: IDocumentCard) => {
   return (
     <div className="doc-container">
       <div className="image-container">
@@ -12,6 +21,18 @@ export const DocumentCard = ({ title, date, type, image }: IDocumentCard) => {
         <span className="fnt-w400">{date}</span>
         <span className="fnt-w400">{type}</span>
       </div>
+      {type === "folder" && (
+        <div
+          className="image-container folder-dropdown-icon"
+          onClick={onClick}
+          data-testid="dropdown-icon"
+        >
+          <img
+            src={!isExpanded ? ArrowDropDown : ArrowDropUp}
+            alt="file-type-image"
+          />
+        </div>
+      )}
     </div>
   );
 };
