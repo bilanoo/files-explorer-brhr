@@ -1,16 +1,16 @@
-export const DocumentCard = () => {
+import "./DocumentCard.css";
+import { IDocumentCard } from "./DocumentCard.types";
+
+export const DocumentCard = ({ title, date, type, image }: IDocumentCard) => {
   return (
     <div className="doc-container">
       <div className="image-container">
-        <img
-          src={"../../../public/assets/csv-file-type.svg"}
-          alt="file-type-image"
-        />
+        <img src={image} alt="file-type-image" />
       </div>
       <div className="content-container">
-        <span>Employee Handbook</span>
-        <span className="fnt-w400">date</span>
-        <span className="fnt-w400">csv</span>
+        <span>{title}</span>
+        <span className="fnt-w400">{date}</span>
+        <span className="fnt-w400">{type}</span>
       </div>
     </div>
   );
