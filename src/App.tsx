@@ -1,6 +1,7 @@
 import "./App.css";
-import { DocumentCard } from "./components/DocumentCard/DocumentCard";
+import data from "./data.json";
 import { Header } from "./components/Header/Header";
+import { ViewAllFiles } from "./components/ViewAllFiles/ViewAllFiles";
 
 function App() {
   return (
@@ -21,12 +22,7 @@ function App() {
           </div>
         </form>
       </div>
-      <DocumentCard
-        image={"image"}
-        title={"Employee Handbook"}
-        type={"type"}
-        date={"date"}
-      />
+      <ViewAllFiles data={data} />
     </>
   );
 }
