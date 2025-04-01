@@ -21,8 +21,8 @@ function App() {
             />
           </div>
         </form>
+        <ViewAllFiles data={data} />
       </div>
-      <ViewAllFiles data={data} />
     </>
   );
 }
