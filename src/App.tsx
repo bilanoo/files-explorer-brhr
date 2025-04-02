@@ -1,28 +1,33 @@
 import "./App.css";
-import data from "./data.json";
+import dataJson from "./data.json";
 import { Header } from "./components/Header/Header";
 import { ViewAllFiles } from "./components/ViewAllFiles/ViewAllFiles";
+import { Filter } from "./components/Filter/Filter";
+import { useState } from "react";
 
 function App() {
+  const [data] = useState(dataJson);
+  const [filteredData, setFilteredData] = useState([]);
+  const [isFiltering, setIsFiltering] = useState(false);
+
+  let content = <ViewAllFiles data={data} />;
+  if (isFiltering) {
+    content =
+      filteredData.length > 0 ? (
+        <ViewAllFiles data={filteredData} />
+      ) : (
+        <div>No results found</div>
+      );
+  }
   return (
     <>
       <Header />
-      <div className="main">
-        <form>
-          <div className="filter-container">
-            <label htmlFor="filter">Filter</label>
-            <input
-              aria-label="filter"
-              type="text"
-              id="filter-field"
-              name="filter"
-              placeholder="Find file..."
-              className="filter-field"
-            />
-          </div>
-        </form>
-        <ViewAllFiles data={data} />
-      </div>
+      <Filter
+        data={data}
+        setFilteredData={setFilteredData}
+        setIsFiltering={setIsFiltering}
+      />
+      {content}
     </>
   );
 }
