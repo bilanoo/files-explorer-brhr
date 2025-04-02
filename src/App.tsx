@@ -5,6 +5,7 @@ import { ViewAllFiles } from "./components/ViewAllFiles/ViewAllFiles";
 import { Filter } from "./components/Filter/Filter";
 import { useState } from "react";
 import { IDocumentDetails } from "./components/ViewAllFiles/ViewAllFiles.types";
+import { NoResultFound } from "./components/Filter/NoResultsFound/NoResultsFound";
 
 function App() {
   const [data] = useState(dataJson);
@@ -17,7 +18,7 @@ function App() {
       filteredData.length > 0 ? (
         <ViewAllFiles data={filteredData} />
       ) : (
-        <div>No results found</div>
+        <NoResultFound />
       );
   }
   return (

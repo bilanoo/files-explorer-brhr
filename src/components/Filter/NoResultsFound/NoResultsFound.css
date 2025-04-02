@@ -1,0 +1,30 @@
+.no-result-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.no-result-image {
+  max-width: 60%;
+  height: auto;
+  min-width: 150px;
+}
+
+.no-result-heading {
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .no-result-image {
+    max-width: 80%;
+  }
+
+  .no-result-heading {
+    font-size: 1.25rem;
+  }
+}
