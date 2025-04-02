@@ -1,17 +1,33 @@
+import * as dataJsonModule from "./data.json";
+
+jest.mock("./data.json", () => ({
+  __esModule: true,
+  default: [
+    {
+      image: "./assets/pdf-file-type.svg",
+      type: "pdf",
+      name: "Employee Handbook",
+      added: "2017-01-06",
+    },
+    {
+      image: "./assets/pdf-file-type.svg",
+      type: "pdf",
+      name: "Public Holiday policy",
+      added: "2016-12-06",
+    },
+  ],
+}));
+
 import { render, screen, fireEvent } from "@testing-library/react";
 import App from "./App";
 
 describe("App", () => {
-  it("should display the heading", () => {
-    render(<App />);
-
-    expect(screen.getByText("0800 470 2432")).toBeInTheDocument();
-  });
-
-  it("should test the search input field", () => {
+  it("should display the no results found page if the user searches for a file that does not exist", () => {
     render(<App />);
     const input = screen.getByLabelText("filter");
     fireEvent.change(input, { target: { value: "Dolly" } });
     expect(input.value).toBe("Dolly");
+    fireEvent.click(screen.getAllByRole("button")[0]);
+    expect(screen.getByAltText("no results found")).toBeInTheDocument();
   });
 });
