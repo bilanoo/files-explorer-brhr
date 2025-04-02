@@ -1,3 +1,11 @@
+jest.mock(
+  "../../../public/assets/arrow-drop-down.svg",
+  () => "arrow-drop-down.svg"
+);
+jest.mock(
+  "../../../public/assets/arrow-drop-up.svg",
+  () => "arrow-drop-up.svg"
+);
 import { fireEvent, render, screen } from "@testing-library/react";
 import { FolderCard } from "./FolderCard";
 
@@ -13,6 +21,14 @@ describe("FolderCard", () => {
         title="Handbook"
         type="folder"
         date="01-04-2025"
+        files={[
+          {
+            image: "dummy",
+            name: "Employee Handbook",
+            type: "doc",
+            added: "30-03-2025",
+          },
+        ]}
         isExpanded={isExpanded}
         onClick={handleOnClick}
       />

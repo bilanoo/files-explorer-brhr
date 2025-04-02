@@ -12,7 +12,7 @@ describe("DocumentCard", () => {
       />
     );
 
-    expect(screen.getByText("Employee Handbook")).toBeInTheDocument();
+    expect(screen.getByText("Handbook")).toBeInTheDocument();
     expect(screen.getByText("20-03-2025")).toBeInTheDocument();
     expect(screen.getByText("pdf")).toBeInTheDocument();
   });
