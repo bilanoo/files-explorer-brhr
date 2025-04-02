@@ -1,54 +1,73 @@
-# React + TypeScript + Vite
+# File Eplorer App for BrightHR
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Table of contents
 
-Currently, two official plugins are available:
+- [Overview](#overview)
+  - [Screenshot](#screenshot)
+  - [The project](#the-project)
+  - [Expected behaviour](#expected-behaviour)
+  - [Links](#links)
+- [Built with](#built-with)
+- [Continued development](#continued-development)
+- [How to run the application](#how to run the application)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Screenshot
 
-## Expanding the ESLint configuration
+![Mobile design preview for the File Explorer app](./public/assets/mobile-preview.PNG)
+![Desktop design preview for the File Explorer app](./public/assets/desktop-preview.PNG)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### The Project
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Your users should be able to:
+For each file show at least:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+File type
+Name
+Date added
+For each folder indicate that it's not a file and is clickable.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Please add at least two of the following features:
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+Allow a user to open a folder to see it’s contents
+Sort by name/size/date
+Filter by filename
+
+- View the optimal layout for the app depending on their device's screen size
+- View the mobile BrightHR logo on mobile devices and Desktop logo on larger devices
+- For each file show at least: File type, Name, Date added
+- Allow a user to open a folder to see it’s contents
+- Filter by filename
+
+### Expected Behaviour
+
+- View the optimal layout for the app depending on their device's screen size
+  - Regardless of the user device, the web app should display the content in the correct order without any out of bound or
+    not proportionate content.
+- View the mobile BrightHR logo on mobile devices and Desktop logo on larger devices
+  - If the user is on a mobile screen, the logo should be the symbolic mobile screen one. If the user is using any larger devices, the user should see the Desktop version.
+- For each file show at least: File type, Name, Date added
+- Allow a user to open a folder to see it’s contents
+- Filter by filename
+- The user should be able to filter only files by name. If the query is invalid, the user should see a no results found to prompt the user. Also, there should be a button/icon to allow the user to clear the query.
+
+### Links
+
+- Solution URL: [Github](https://github.com/bilanoo/files-explorer-brhr)
+- Live Site URL: [File Explorer by BrightHR](https://invoice-app-by-bilal-khan.netlify.app)
+
+### Built with
+
+- [React](https://react.dev/)
+- [Typescript](https://www.typescriptlang.org/docs/)
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox)
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
+- [Jest](https://jestjs.io/docs/getting-started)
+
+### Continued development
+
+Add additional features like being able to filter based on name/size/date.
+
+### How to run the application
+
+Please on a terminal use the following command: `npm install` and then run `npm run dev`.
