@@ -1,0 +1,45 @@
+.filter-fields {
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+}
+
+.filter-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  height: fit-content;
+  align-items: center;
+}
+.filter-field {
+  padding: 12px 20px;
+  margin-left: 0.5rem;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.search-button {
+  margin-top: auto;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+}
+
+.search-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.clear {
+  margin-right: auto;
+}
