@@ -14,7 +14,7 @@ describe("Filter", () => {
         setIsFiltering={mockSetIsFiltering}
       />
     );
-    const input = screen.getByLabelText("filter");
+    const input = screen.getByLabelText("filter") as HTMLInputElement;
     fireEvent.change(input, { target: { value: "Dolly" } });
     expect(input.value).toBe("Dolly");
   });
@@ -30,7 +30,7 @@ describe("Filter", () => {
         setIsFiltering={mockSetIsFiltering}
       />
     );
-    const input = screen.getByLabelText("filter");
+    const input = screen.getByLabelText("filter") as HTMLInputElement;
     fireEvent.change(input, { target: { value: "Dolly" } });
     expect(input.value).toBe("Dolly");
     fireEvent.click(screen.getAllByRole("button")[1]);
