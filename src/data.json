@@ -37,7 +37,7 @@
     "added": "2016-08-12"
   },
   {
-    "image": "./assets/-icon.svg",
+    "image": "./assets/folder-icon.svg",
     "type": "folder",
     "name": "Misc",
     "files": [
