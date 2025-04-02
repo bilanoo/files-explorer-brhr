@@ -40,6 +40,8 @@ export const Filter = ({ setFilteredData, setIsFiltering, data }: IFilter) => {
     const inputField = document.getElementById("filter-field");
     if (inputField instanceof HTMLInputElement) {
       inputField.value = "";
+    } else {
+      return;
     }
     setIsFiltering(false);
     setFilteredData([]);
