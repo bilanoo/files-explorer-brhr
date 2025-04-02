@@ -4,10 +4,11 @@ import { Header } from "./components/Header/Header";
 import { ViewAllFiles } from "./components/ViewAllFiles/ViewAllFiles";
 import { Filter } from "./components/Filter/Filter";
 import { useState } from "react";
+import { IDocumentDetails } from "./components/ViewAllFiles/ViewAllFiles.types";
 
 function App() {
   const [data] = useState(dataJson);
-  const [filteredData, setFilteredData] = useState([]);
+  const [filteredData, setFilteredData] = useState<IDocumentDetails[]>([]);
   const [isFiltering, setIsFiltering] = useState(false);
 
   let content = <ViewAllFiles data={data} />;

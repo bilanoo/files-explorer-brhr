@@ -1,9 +1,9 @@
 export interface IDocumentDetails {
   image: string;
-  name: string;
   type: string;
+  name: string;
   added?: string;
-  files?: [];
+  files?: IDocumentDetails[];
 }
 
 export interface IViewAllFiles {
