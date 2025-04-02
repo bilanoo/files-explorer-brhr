@@ -1,4 +1,4 @@
-# File Eplorer App for BrightHR
+# File Explorer App for BrightHR
 
 ## Table of contents
 
