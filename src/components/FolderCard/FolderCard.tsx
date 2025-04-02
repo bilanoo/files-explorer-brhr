@@ -2,7 +2,7 @@ import { useState } from "react";
 import { DocumentCard } from "../DocumentCard/DocumentCard";
 import "./FolderCard.css";
 import { IDocumentCard } from "../DocumentCard/DocumentCard.types";
-import { IFile } from "./FolderCard.types";
+import { IDocumentDetails } from "../ViewAllFiles/ViewAllFiles.types";
 
 export const FolderCard = ({
   title,
@@ -10,7 +10,7 @@ export const FolderCard = ({
   type,
   image,
   files,
-}: IDocumentCard & { files: IFile[] | null }) => {
+}: IDocumentCard & { files: IDocumentDetails[] | null }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const handleOnClick = () => {
