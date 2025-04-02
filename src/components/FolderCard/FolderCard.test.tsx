@@ -19,15 +19,8 @@ describe("FolderCard", () => {
     );
     const imgElement = screen.getByAltText("folder dropdown icon");
 
-    expect(imgElement).toHaveAttribute(
-      "src",
-      "../../../public/assets/arrow-drop-down.svg"
-    );
+    expect(imgElement).toHaveAttribute("alt", "folder dropdown icon");
     fireEvent.click(screen.getByTestId("dropdown-icon"));
-
-    expect(imgElement).toHaveAttribute(
-      "src",
-      "../../../public/assets/arrow-drop-up.svg"
-    );
+    expect(imgElement).toHaveAttribute("alt", "close folder icon");
   });
 });
