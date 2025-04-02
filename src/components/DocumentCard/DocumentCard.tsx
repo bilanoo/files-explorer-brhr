@@ -14,7 +14,7 @@ export const DocumentCard = ({
   return (
     <div className="doc-container">
       <div className="image-container">
-        <img src={image} alt="file-type-image" />
+        <img src={image} alt="file type image" />
       </div>
       <div className="content-container">
         <span>{title}</span>
@@ -29,7 +29,7 @@ export const DocumentCard = ({
         >
           <img
             src={!isExpanded ? ArrowDropDown : ArrowDropUp}
-            alt="file-type-image"
+            alt={!isExpanded ? "folder dropdown icon" : "close folder icon"}
           />
         </div>
       )}
