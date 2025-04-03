@@ -9,7 +9,7 @@
   - [Links](#links)
 - [Built with](#built-with)
 - [Continued development](#continued-development)
-- [How to run the application](#how to run the application)
+- [How to run the application](#how-to-run-the-application)
 
 ### Screenshot
 
