@@ -58,11 +58,11 @@ To enhance the application, additional filtering options—by name, size, and da
 
 1. Dropdown Implementation – Add a dropdown to select the filter type, defaulting to `All`.
 
-2. Filtering by Size – Implement an onChange handler to update the `filteredData` array and set the `isFiltered` flag when filtering by size.
+2. Filtering by `Size` – Implement an onChange handler to update the `filteredData` array and set the `isFiltered` flag when filtering by size.
 
-3. Filtering by Date – Extend the filtering logic to handle date-based filtering once size filtering is fully tested.
+3. Filtering by `Date` – Extend the filtering logic to handle date-based filtering once size filtering is fully tested.
 
-4. Filtering by Name – Implement name-based filtering following thorough testing of previous filters.
+4. Filtering by `Name` – Implement name-based filtering following thorough testing of previous filters.
 
 5. `All` Selection – Ensure selecting `All` resets the data to its original state by clearing filters and restoring the full dataset.
 
