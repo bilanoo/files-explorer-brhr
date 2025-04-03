@@ -18,19 +18,7 @@
 
 ### The Project
 
-Your users should be able to:
-For each file show at least:
-
-File type
-Name
-Date added
-For each folder indicate that it's not a file and is clickable.
-
-Please add at least two of the following features:
-
-Allow a user to open a folder to see it’s contents
-Sort by name/size/date
-Filter by filename
+The project has been developed with a Mobile first and Test Driven Development approach.
 
 - View the optimal layout for the app depending on their device's screen size
 - View the mobile BrightHR logo on mobile devices and Desktop logo on larger devices
@@ -53,7 +41,7 @@ Filter by filename
 ### Links
 
 - Solution URL: [Github](https://github.com/bilanoo/files-explorer-brhr)
-- Live Site URL: [File Explorer by BrightHR](https://invoice-app-by-bilal-khan.netlify.app)
+- Live Site URL: [File Explorer by BrightHR](https://file-explorer-by-brighthr-bk.netlify.app/)
 
 ### Built with
 
