@@ -54,7 +54,21 @@ The project has been developed with a Mobile first and Test Driven Development a
 
 ### Continued development
 
-Add additional features like being able to filter based on name/size/date.
+To enhance the application, additional filtering options—by name, size, and date—would be implemented using a structured approach:
+
+1. Dropdown Implementation – Add a dropdown to select the filter type, defaulting to `All`.
+
+2. Filtering by Size – Implement an onChange handler to update the `filteredData` array and set the `isFiltered` flag when filtering by size.
+
+3. Filtering by Date – Extend the filtering logic to handle date-based filtering once size filtering is fully tested.
+
+4. Filtering by Name – Implement name-based filtering following thorough testing of previous filters.
+
+5. `All` Selection – Ensure selecting `All` resets the data to its original state by clearing filters and restoring the full dataset.
+
+6. Code Optimization – Refactor the filtering logic into a utility function for cleaner, more maintainable code.
+
+This step-by-step approach ensures functionality is built incrementally and tested thoroughly before optimization.
 
 ### How to run the application
 
