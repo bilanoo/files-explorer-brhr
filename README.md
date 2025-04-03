@@ -72,4 +72,4 @@ This step-by-step approach ensures functionality is built incrementally and test
 
 ### How to run the application
 
-Please on a terminal use the following command: `npm install` and then run `npm run dev`.
+Please on a terminal use the following command: `npm install` and then run `npm run dev`. Also the node version used is 22.14.0.
